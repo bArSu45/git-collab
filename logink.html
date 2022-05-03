@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Log In</title>
+      <!-- <link rel="stylesheet" href="login.css"> -->
+</head>
+<style>
+    #form2{
+      width: 30%;
+      height:auto;
+
+padding: 20px 30px 20px 20px;
+      border: 1px solid black;
+      margin: auto;
+      margin-top: 100px;
+      background-color: black;
+      border-radius: 10px;
+     
+}
+#form2>input{
+      width: 100%;
+      margin-top: 20px;
+      padding: 5px;
+}
+h2{
+      text-align: center;
+      color: white;
+}
+#log{
+      margin-bottom: 20px;
+}
+#form2>div{
+      /* border: 1px solid red; */
+      text-align: center;
+      color: white;
+  
+}
+#form2>div>a{
+      text-decoration: none;
+      color: red;
+}
+form>p{
+      color: white;
+      margin-bottom: -10px;
+      font-size: 12px;
+}  
+</style>
+<body>
+    <form id="form2">
+          <h2>Welcome Back</h2>
+          <p>Enter Email :</p>
+          <input id="em1" placeholder="Enter Email" type="email">
+          <p>Enter Passward :</p>
+          <input id="pass1" placeholder="Enter Passward" type="password">
+          <input id="log" type="submit" value="Log In">
+          <div id="new">Need An Account ?  <a href="signup.html"> Create Account Here!</a></div>
+    </form>
+</body>
+</html>
+<!-- <script>
+ var savedata=JSON.parse(localStorage.getItem("Persondata"))
+
+document.querySelector("#form2").addEventListener("submit",loginfunction)
+function loginfunction(){
+      event.preventDefault()
+      logindataobject={
+            email2:form2.em1.value,
+            pass2:form2.pass1.value
+      }
+      
+      if(savedata==null)
+      {
+            alert("Please Create Account")
+      }
+      else if(savedata.email==logindataobject.email2 && savedata.pass==logindataobject.pass2)
+      {
+            alert("Login Sucessful")
+           window.location.href="navbar.html"
+           localStorage.setItem("logindata",JSON.stringify(logindataobject))
+      }
+      else{
+            alert("User Does Not Exist")
+      }
+      
+      
+      
+
+}
+
+</script> -->
